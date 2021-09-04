@@ -6,35 +6,30 @@
 <body>
 	<form>
 		<fieldset>
-			<legend>Completar</legend>
-			<label>Elija un color:</label><input type="color">
+			<legend>Formulario de opciones</legend>
+			<label>Elija un color:</label><input type="color"> <br>
+			<label>Instituto</label><input type="text" name="instituto"> <br>
+			<label>Estudios elegidos</label><input type="text" name="estudios">
 			<br>
-			<textarea rows="6" cols="59" placeholder="Por favor, escriba aquí"></textarea>
+			<input type="radio" name="navegador" value="navegadorfirefox"> <label>Firefox</label>
 			<br>
-			<select name="lenguaje"> 
-				<option value="java">Java </option>
-				<option value="python">Python </option>
-				<option value="html">HTML </option>
-				<option value="visual_basic">Visual Basic </option>
-			</select>
+			<input type="radio" name="navegador" value="navegadorchrome"> <label>Chrome</label>
 			<br>
-			<input type="checkbox" name="ciclo" value="cicloasir"> <label>ASIR</label>
-				<input type="checkbox" name="ciclo" value="ciclodam"> <label>DAM</label>
-				<input type="checkbox" name="ciclo" value="ciclodaw"> <label>DAW</label>
-		</fieldset>
-		
-		<fieldset>
-			<legend>Rellene las opciones siguientes</legend>	
-			<label>Elija una fecha:</label><input type="date">
+			<input type="radio" name="navegador" value="navegadoropera"> <label>Opera</label>
+			<br>
+			<input type="radio" name="navegador" value="navegadorie"> <label>IE</label>
 			<br>
 			<label>Elija un fichero:</label><input type="file">
 			<br>
-			<select name="ciclo[]" multiple> 
-				<option value="ciclosmir"> SMIR </option>
-				<option value="cicloasir"> ASIR </option>
-				<option value="ciclodam">  DAM  </option>
-				<option value="ciclodaw">  DAW  </option>
-			</select>
+			<label>Elija una hora:</label><input type="time">
+			<br>
+			<input type="checkbox" name="hardware" value="hardwaretarjeta_aceleradora"> <label>Tarjeta aceleradora</label>
+			<br>
+			<input type="checkbox" name="hardware" value="hardwaremonitor_led"> <label>Monitor LED </label>
+			<br>
+			<input type="checkbox" name="hardware" value="hardwaressd"> <label> SSD </label>
+			<br>
+			<textarea rows="5" cols="57" placeholder="Utilice este cuadro para escribir"></textarea>
 		</fieldset>
 	</form>
 </body>

@@ -1,55 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
+<meta charset="utf-8">
 <head>
-	<title> Formulario 1</title>
+	<title>Formulario 1</title>
 </head>
 <body>
 	<form>
 		<fieldset>
-			<legend>Elige entre estas opciones</legend>
-			<label>Elige un fichero:</label><input type="file">
-			<br> <br>
-			<label>Elige una hora:</label><input type="time">
-			<br> <br>
-			<label>Elige una fecha:</label><input type="date">
-			<br> <br>
-			<label>Nombre</label><input type="text" name="nombre">
+			<legend> Completar </legend>
+			<label>Elija un color:</label><input type="color">
+			<br>
+			<label>Nombre</label><input type="text" name="nombre"> 
 			<br>
 			<label>Apellidos</label><input type="text" name="apellidos">
 			<br>
-			<label>Dirección</label><input type="text" name="direccion">
+			<label>Telefono</label><input type="text" name="teléfono">
+			<br> <br>
+			<input type="checkbox" name="asignatura" value="asignaturalengua"> <label>Lengua </label>
+			<input type="checkbox" name="asignatura" value="asignaturamatematicas"> <label> Matemáticas </label>
+			<input type="checkbox" name="asignatura" value="asignaturahistoria"> <label> Historia </label> 
+			<input type="checkbox" name="asignatura" value="asignaturageografia"> <label> Geografía </label>
 			<br>
-			<label>Elige un color:</label><input type="color">
+			<label>Elija un fichero:</label><input type="file">
+			<br>
+			<textarea rows="4" cols="57" placeholder="Utilice este cuadro para escribir"></textarea>
+			<br>
+			<input type="radio" name="formato" value="formatojpg"> <label> JPG </label>
+			<input type="radio" name="formato" value="formatopng"> <label> PNG </label>
 		</fieldset>
+
 		<fieldset>
-			<legend>Escoge</legend>
+			<legend>Completar</legend>
+			<label>Nombre</label><input type="text" name="nombre"> 
 			<br>
-			<input type="radio" name="asignaturas" value="asignaturalengua"> <label>Lengua</label>
+			<label>Apellidos</label><input type="text" name="apellidos">
 			<br>
-			<input type="radio" name="asignaturas" value="asignaturamatematicas"> <label>Matemáticas</label>
+			<label>Direccion</label><input type="text" name="direccion">
+			<br> <br>
+			<label>Elija una fecha:</label><input type="date">
 			<br>
-			<input type="radio" name="asignaturas" value="asignaturahistoria"> <label>Historia</label>
-			<br>
-			<input type="radio" name="asignaturas" value="asignaturageografia"> <label>Geografía</label>
-			<br>
-			<select name="ciclo"> 
-				<option value="asir">ASIR </option>
-				<option value="dam">DAM </option>
-				<option value="daw">DAW </option>
-			</select> 
-			<br>
-			<input type="checkbox" name="ciclo" value="daw"> <label>DAW</label>
-			<input type="checkbox" name="dam"> <label>DAM</label>
-			<input type="checkbox" name="smx"> <label>SMX</label>
-			<br>
-			<select name="sexo[]" multiple> 
-				<option value="hombre">Hombre </option>
-				<option value="mujer"> Mujer</option>
-
+			<select name="conector">
+				<option value="usb"> USB </option>
+				<option value="paralelo"> Paralelo </option>
+				<option value="ps2"> PS2 </option>
 			</select>
+			<br>
+			<label>Elija un fichero:</label><input type="file">
+
 		</fieldset>
-
-
 	</form>
+
 </body>
 </html>

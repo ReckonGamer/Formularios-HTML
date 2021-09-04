@@ -6,47 +6,46 @@
 <body>
 	<form>
 		<fieldset>
-			<legend>Indique sus preferencias por favor</legend>
+			<legend>Preferencias</legend>
 			<label>Elija una fecha:</label><input type="date">
 			<br>
-			<label>Elija un fichero</label><input type="file">
+			<label>Elija una hora:</label><input type="time">
 			<br>
-			<input type="radio" name="procesador" value="procesadoramd"><label>AMD</label> 
-			<input type="radio" name="procesador" value="procesadorinteli5"><label>Intel i5</label> 
-			<input type="radio" name="procesador" value="procesadorinteli7"><label>Intel i7</label> 
-		</fieldset>
-
-		<fieldset>
-			<legend>Indique sus preferencias por favor</legend>
-			<input type="radio" name="asignatura" value="asignaturamatematicas"> <label>Matemáticas</label>
-			<input type="radio" name="asignatura" value="asignaturahistoria"> <label>Historia</label>
-			<input type="radio" name="asignatura" value="asignaturageografia"> <label>Geografía</label>
-			<input type="radio" name="asignatura" value="asignaturalengua"> <label>Lengua</label> 
+			<label>Elija un fichero:</label><input type="file">
 			<br>
-			<label>Nombre</label><input type="text"> 
-			<br>
-			<label>Apelidos</label><input type="text">
-			<br>
-			<label>Direccion</label><input type="text">
-			<br>
-			<br>
-			<label>Elija un color:</label><input type="color"> <br><textarea rows="5" cols="53" placeholder="Utilice este cuadro para escribir"></textarea>
-			<br>
-			<label>Elija una fecha:</label><input type="date"> <br>
-			<select name="idioma"> 
-				<option value="ingles">Inglés</option>
-				<option value="aleman">Alemán </option>
-				<option value="frances">Francés </option>
+			<select name="lenguaje[]" multiple>
+				<option value="python"> Python </option>
+				<option value="html"> HTML </option>
+				<option value="visual_basic"> Visual Basic</option>
+				<option value="java"> Java </option>
 			</select>
 			<br>
-			<label>Elija una hora:</label><input type="time"> 
+			<label>Elija un color:</label> <input type="color">
 			<br>
-			<label>Elija un fichero:</label><input type="file"> 
+			<input type="checkbox" name="" value=""> <label>Monitor LED</label>
 			<br>
-			<input type="checkbox" name="sexo" value="sexomujer"> <label>Mujer</label>
-			<input type="checkbox" name="sexo" value="sexohombre"> <label>Hombre</label>
+			<input type="checkbox" name="" value=""> <label>SSD</label>
+			<br>
+			<textarea rows="5" cols="48" placeholder="Inserte aqui el texto"></textarea>
+			<br>
+			<label>Instituto</label><input type="text" name="instituto">
+			<br>
+			<label>Estudios Elegidos</label><input type="text" name="estudios">
+			<br>
+			<label>Nombre</label><input type="text" name="nombre">
+			<br>
+			<label>Apellidos</label><input type="text" name="apellidos">
+			<br>
+			<label>Email</label><input type="text" name="email">
+			<br>
+			<input type="radio" name="conector" value="conectorusb"> <label>USB</label>
+			<br>
+			<input type="radio" name="conector" value="conectorparalelo"> <label>Paralelo</label>
+			<br>
+			<input type="radio" name="conector" value="conectorps2"> <label>PS2</label>
+
+
 		</fieldset>
 	</form>
-
 </body>
 </html>
