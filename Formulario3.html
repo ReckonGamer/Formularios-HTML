@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario 3</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Completar</legend>
+			<label>Elija un color:</label><input type="color">
+			<br>
+			<textarea rows="6" cols="59" placeholder="Por favor, escriba aquí"></textarea>
+			<br>
+			<select name="lenguaje"> 
+				<option value="java">Java </option>
+				<option value="python">Python </option>
+				<option value="html">HTML </option>
+				<option value="visual_basic">Visual Basic </option>
+			</select>
+			<br>
+			<input type="checkbox" name="ciclo" value="cicloasir"> <label>ASIR</label>
+				<input type="checkbox" name="ciclo" value="ciclodam"> <label>DAM</label>
+				<input type="checkbox" name="ciclo" value="ciclodaw"> <label>DAW</label>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Rellene las opciones siguientes</legend>	
+			<label>Elija una fecha:</label><input type="date">
+			<br>
+			<label>Elija un fichero:</label><input type="file">
+			<br>
+			<select name="ciclo[]" multiple> 
+				<option value="ciclosmir"> SMIR </option>
+				<option value="cicloasir"> ASIR </option>
+				<option value="ciclodam">  DAM  </option>
+				<option value="ciclodaw">  DAW  </option>
+			</select>
+		</fieldset>
+	</form>
+</body>
+</html>
