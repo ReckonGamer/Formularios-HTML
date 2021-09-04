@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<meta charset="utf-8">
+<head>
+	<title> Ejercicio 1</title>
+</head>
+<body>
+	<form>
+		<fieldset >Rellenar
+		
+			<legend> <input type="radio" name="idioma" value="idiomaingles"> Inglés	</input> </legend>	
+			<legend> <input type="radio" name="idioma" value="idiomaaleman"> Alemán	</input> </legend>
+			<legend> <input type="radio" name="idioma" value="idiomafrances"> Francés </input> </legend>
+		<br>
+			<select name="conector">
+				<option value="usb">USB 		   </option>
+				<option value="paralelo">Paralelo  </option>
+					<option value="ps2"> PS2 	   </option>
+			 </select>
+			<br>
+		<label> Nombre </label>	<input type="text" name="nombre"> 
+		<br>
+		<label> Apellidos</label>	<input type="text" name="apellidos"> 
+		</fieldset>
+
+		<br> 
+		<fieldset>Indique sus preferencias por favor
+		<br>	
+		<select name="sexo[]" multiple=""> 
+			<option value="hombre">Hombre </option>
+			<option value="mujer">Mujer </option>
+		</select>
+		<br>
+			<input type="checkbox" name="sexo" value="sexomujer"> Mujer </input>
+		<br>
+			<input type="checkbox" name="sexo" value="sexohombre"> Hombre </input>
+		<br>
+		<label>Elija una fecha:</label> <input type="placeholder" name="fecha" value="dd/mm/aaaa"> </input>
+
+		 </fieldset>
+	</form>
+</body>
+</html>
